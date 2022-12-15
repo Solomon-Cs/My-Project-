@@ -1,0 +1,222 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(5, 28, 20, 0.552);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(44, 43, 43, 0.5);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+#home ::before{
+    background: url(img/img1.png) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 10%;
+}
+.heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white ;
+    font-weight: bold;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img {
+    width: 575px;
+    height: 300px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: justify;
+}
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+/* Gallery Section */
+#gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* SERVICE section */
+#service{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;border-radius: 15px;
+    background :linear-gradient(to top ,rgb(153, 209, 226) 50% , white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+
+}
+.box:hover{
+    box-shadow: 0 0 20px rgb(45, 21, 110);
+    background-position: left bottom;
+    border:none;
+    color: white;
+    
+}
+.box img{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding-top: 10px;
+}
+/* Contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    margin: 20px 0px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+
+}
+#send{
+    width: 40%;
+    padding: 10px;
+    margin: 40px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    font-weight: bold;
+}
